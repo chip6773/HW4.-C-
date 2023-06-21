@@ -3,6 +3,7 @@
 
 // НАЧАЛО КОДА ЗАДАЧИ 25
 
+/*==
 void A_v_stepeni_B(int a, int b)
 {
     int temp = a;
@@ -22,11 +23,7 @@ Console.Write("введите число B -> ");
 int B = Convert.ToInt32(Console.ReadLine());
 
 A_v_stepeni_B(A, B);
-
-
-
-
-
+*/
 
 // КОНЕЦ КОДА ЗАДАЧИ 25
 
@@ -37,7 +34,40 @@ A_v_stepeni_B(A, B);
 
 // НАЧАЛО КОДА ЗАДАЧИ 27
 
+int Schjotchik(int num)
+{
+    int count = 0;
+    for (int i = 1; num > 0; i++)
+    {
+        num /= 10;
+        count = i;
+    }
+    return count;
+}
 
+void SummaTsifr(int num)
+{
+    int sum = 0;
+    int temp = 0;
+    for (int i = 1; num > 0; i++)
+    {
+        temp = num %10;
+        num /= 10;
+        sum += temp;
+    }
+    Console.Write("а вот сумма всех его цифр -> " + sum);
+}
+
+Console.Clear();
+
+Console.Write("введите число -> ");
+int A = Convert.ToInt32(Console.ReadLine());
+
+int kol_zn = Schjotchik(A);
+Console.Write($"в нём {kol_zn} цифр(ы).");
+
+Console.WriteLine();
+SummaTsifr(A);
 
 
 
