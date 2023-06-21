@@ -34,6 +34,7 @@ A_v_stepeni_B(A, B);
 
 // НАЧАЛО КОДА ЗАДАЧИ 27
 
+/*
 int Schjotchik(int num)
 {
     int count = 0;
@@ -68,8 +69,7 @@ Console.Write($"в нём {kol_zn} цифр(ы).");
 
 Console.WriteLine();
 SummaTsifr(A);
-
-
+*/
 
 // КОНЕЦ КОДА ЗАДАЧИ 27
 
@@ -78,9 +78,29 @@ SummaTsifr(A);
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов
 // и выводит их на экран.
 
+
 // НАЧАЛО КОДА ЗАДАЧИ 29
 
 
+int [] ZapolnjaemMassiva(int dlina)
+{
+    int [] array = new int[dlina];
+    for (int i = 0; i < dlina; i++)
+    {
+        array[i] = new Random().Next (1, 100);
+    }
+    return array;
+}
+
+void PechatMassiva(int [] arr)
+{
+    int count = arr.Length;
+    for (int pos = 0; pos < count; pos++) Console.Write(arr[pos] + " ");
+}
+
+int dl = 8;
+int [] nashMassiv = ZapolnjaemMassiva(dl);
+PechatMassiva(nashMassiv);
 
 
 
