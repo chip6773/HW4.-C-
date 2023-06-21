@@ -3,7 +3,7 @@
 
 // НАЧАЛО КОДА ЗАДАЧИ 25
 
-/*==
+
 void A_v_stepeni_B(int a, int b)
 {
     int temp = a;
@@ -23,7 +23,7 @@ Console.Write("введите число B -> ");
 int B = Convert.ToInt32(Console.ReadLine());
 
 A_v_stepeni_B(A, B);
-*/
+
 
 // КОНЕЦ КОДА ЗАДАЧИ 25
 
@@ -81,7 +81,7 @@ SummaTsifr(A);
 
 // НАЧАЛО КОДА ЗАДАЧИ 29
 
-
+/*
 int [] ZapolnjaemMassiva(int dlina)
 {
     int [] array = new int[dlina];
@@ -103,7 +103,7 @@ int [] nashMassiv = ZapolnjaemMassiva(dl);
 PechatMassiva(nashMassiv);
 
 
-
+*/
 // КОНЕЦ КОДА ЗАДАЧИ 29
 
 //-------------------------------------------------------------
